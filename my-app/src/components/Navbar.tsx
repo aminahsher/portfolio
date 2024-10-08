@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { MdMenuOpen } from "react-icons/md";
+
 const Navbar = () => {
   return (
     <div className='container pt-8'>
@@ -16,7 +17,7 @@ const Navbar = () => {
         
 
     </ul>
-    <MdMenuOpen className='md-hidden' size={30} />
+    <MdMenuOpen className='md:hidden' size={30} />
     </div>
 </div>
   )
