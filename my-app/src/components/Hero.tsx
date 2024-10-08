@@ -5,11 +5,11 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="min-h-screen bg-no-repeat bg-[url(/me.png)] lg:bg[15%] bg-cover"
+      className="min-h-screen bg-no-repeat bg-[url(/me.png)]  bg-cover"
       style={{
         backgroundSize: "35%",
 
-        backgroundPosition: "5% center",
+        backgroundPosition: "left 100px top 100px",
       }}
     >
       <Navbar />
