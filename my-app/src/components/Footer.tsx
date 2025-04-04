@@ -1,56 +1,72 @@
-import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import React from "react";
+import { FaFacebookF, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
-    return (
-        <footer className="bg-blue-800 text-white py-6">
-            <div className="container mx-auto flex flex-col items-center">
-                <div className="flex gap-4 mb-4">
-                    <a href=" https://www.facebook.com/aminah.ali3/" className="hover:text-blue-600">
-                        <FaFacebookF className="text-xl" />
-                    </a>
-                    <a href="https://twitter.com/yourusername" className="hover:text-blue-400">
-                        <FaTwitter className="text-xl" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/aminah-ali-931b142b7/" className="hover:text-blue-700">
-                        <FaLinkedin className="text-xl" />
-                    </a>
-                    <a href="https://github.com/aminahsher" className="hover:text-gray-500">
-                        <FaGithub className="text-xl" />
-                    </a>
-                </div>
+  return (
+    <footer className="bg-gray-900 text-gray-300 py-8">
+      <div className="container mx-auto flex flex-col items-center text-center">
+        {/* Social Media Links */}
+        <div className="flex gap-6 mb-5">
+          <a
+            href="https://www.facebook.com/aminah.ali3/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500 transition duration-300 text-xl"
+          >
+            <FaFacebookF />
+          </a>
+          
+          <a
+            href="https://www.linkedin.com/in/aminah-ali-931b142b7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 transition duration-300 text-xl"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/aminahsher"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400 transition duration-300 text-xl"
+          >
+            <FaGithub />
+          </a>
+        </div>
 
-                <p className="text-center">
-                    &copy; {new Date().getFullYear()} Aminah Ali. All rights reserved.
-                </p>
+        {/* Copyright Text */}
+        <p className="text-sm text-gray-400">
+          &copy; {new Date().getFullYear()} <span className="font-semibold text-white">Aminah Ali</span>. All rights reserved.
+        </p>
 
-                <nav className="mt-4">
-                    <ul className="flex gap-4">
-                        <li>
-                            <a href="#about" className="hover:text-gray-400">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#projects" className="hover:text-gray-400">
-                                Projects
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#skills" className="hover:text-gray-400">
-                                Skills
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact" className="hover:text-gray-400">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
-    );
-}
+        {/* Navigation Links */}
+        <nav className="mt-5">
+          <ul className="flex gap-5 text-sm">
+            <li>
+              <a href="#about" className="hover:text-white transition duration-200">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="hover:text-white transition duration-200">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#skills" className="hover:text-white transition duration-200">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-white transition duration-200">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;

@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react";
 
-interface propsType{
-    title:string,
+interface Props {
+  title: string;
 }
 
-const Heading: React.FC<propsType> = ({title}) => {
+const Heading: React.FC<Props> = ({ title }) => {
   return (
-    <div className='text-center text-4xl pb-8'>
-        <p className='border-b-4 inline-block pb-2'>{title}</p>
-      
+    <div className="text-center text-4xl font-bold pb-8">
+      <p className="inline-block border-b-4 border-blue-500 pb-2 px-4 text-gray-900 dark:text-white transition duration-300 hover:border-blue-400">
+        {title}
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default Heading
+export default Heading;
