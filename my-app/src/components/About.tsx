@@ -8,7 +8,7 @@ const About = () => {
     >
       <h2 className="text-5xl font-extrabold mb-6 text-blue-400">About Me</h2>
       <p className="text-lg mb-6 leading-relaxed">
-        Hey there! 👋 I'm <span className="font-semibold text-blue-300">Aminah</span>, a passionate web developer who thrives on building elegant, high-performing web applications. I love creating immersive user experiences and solving challenging problems with modern web technologies.
+        Hey there! 👋 I&apos;m <span className="font-semibold text-blue-300">Aminah</span>, a passionate web developer who thrives on building elegant, high-performing web applications. I love creating immersive user experiences and solving challenging problems with modern web technologies.
       </p>
       
       <h3 className="text-3xl font-semibold mb-4 text-blue-300">Skills & Expertise 🚀</h3>
@@ -30,7 +30,7 @@ const About = () => {
         ))}
       </ul>
       
-      <h3 className="text-3xl font-semibold mb-4 text-blue-300">Let's Connect! 🌍</h3>
+      <h3 className="text-3xl font-semibold mb-4 text-blue-300">Let&apos;s Connect! 🌍</h3>
       <p className="text-lg">
         Want to collaborate or just say hi? You can find me on:
       </p>
